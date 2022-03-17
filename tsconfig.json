@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "esnext",
+    "declaration": true,
+    "outDir": "./dist",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
