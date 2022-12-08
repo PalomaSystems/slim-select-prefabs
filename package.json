@@ -1,6 +1,6 @@
 {
   "name": "slim-select-prefabs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of slim-select prefabs",
   "main": "dist/index.min.js",
   "scripts": {
