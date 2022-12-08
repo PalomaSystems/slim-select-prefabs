@@ -12,6 +12,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: npm install
+        run: npm i
+      - name: npm build
+        run: npm run build --if-present
       - name: npm publish
         uses: actions/setup-node@v2
         with:
