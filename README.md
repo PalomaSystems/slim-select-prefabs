@@ -1,4 +1,6 @@
 ![npm](https://img.shields.io/npm/v/slim-select-prefabs)
+[![Release new version to NPMJS](https://github.com/kylescudder/slim-select-prefabs/actions/workflows/publish.yml/badge.svg)](https://github.com/kylescudder/slim-select-prefabs/actions/workflows/publish.yml)
+[![Create new GitHub Release](https://github.com/kylescudder/slim-select-prefabs/actions/workflows/github_release.yml/badge.svg)](https://github.com/kylescudder/slim-select-prefabs/actions/workflows/github_release.yml)
 
 # flatpickr-prefabs
 A collection of slim-select prefabs

@@ -3,6 +3,11 @@
 All notable changes to the slim-select-prefabs library will be documented in this file.
 
 ## [1.0.7] - 16/03/2022
+## [1.0.8] - 2022-12-09
+
+### Changed
+Added GitHub Release from CHANGELOG.md action
+
 - Updated README CDN links.
 
 ## [1.0.2] - 16/03/2022
