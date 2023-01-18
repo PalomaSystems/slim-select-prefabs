@@ -46,6 +46,23 @@ export const ddlGenericInitialise = () => {
 		}
 	})
 }
+export const ddlStyledInitialise = () => {
+	const slimSelectArray = document.querySelectorAll('.ddlStyled') as NodeListOf<HTMLSelectElement>
+	slimSelectArray.forEach((element: HTMLSelectElement) => {
+		if (element.dataset.ssid === undefined && element.localName === 'select') {
+			new SlimSelect({
+				select: element,
+				settings: {
+					placeholderText: 'Please select...',
+					allowDeselect: true,
+					searchText: 'Sorry nothing to see here',
+					searchPlaceholder: 'Search',
+					searchHighlight: true
+				}
+			})
+		}
+	})
+}
 const PopulateContacts = (value: number) => {
 	const ddlClientContactID = document.querySelector('.ddlClientContactID') as HTMLSelectElement
 	if (ddlClientContactID != null) {
