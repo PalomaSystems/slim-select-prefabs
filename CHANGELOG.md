@@ -5,6 +5,14 @@ All notable changes to the slim-select-prefabs library will be documented in thi
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.9] - 2023-01-18
+
+### Added
+Added another generic method that uses class `ddlStyled` that adds some nice styling features.
+
+### Updated
+Updated slim-select version to 2.4.1
+
 ## [1.0.8] - 2022-12-09
 
 ### Changed
