@@ -1,33 +1,37 @@
 ﻿import SlimSelect from 'slim-select'
 
 export const ddlClientInitialise = () => {
-	const slimSelectArray = document.querySelectorAll('.ddlClientID')
+	const slimSelectArray = document.querySelectorAll('.ddlClientID') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
-			const select = new SlimSelect({
+			new SlimSelect({
 				select: element,
-				afterClose: function () {
-					contactLoad(element.value)
+				events: {
+					afterChange: () => {
+						contactLoad(element.value)
+					}
 				}
 			})
 		}
 	})
 }
 export const ddlClientContactInitialise = () => {
-	const slimSelectArray = document.querySelectorAll('.ddlClientContactID')
+	const slimSelectArray = document.querySelectorAll('.ddlClientContactID') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
 			new SlimSelect({
 				select: element,
-				afterClose: function () {
-					PopulateContactAddresses(element.value)
+				events: {
+					afterChange: () => {
+						PopulateContactAddresses(element.value)
+					}
 				}
 			})
 		}
 	})
 }
 export const ddlLogTypeInitialise = () => {
-	const slimSelectArray = document.querySelectorAll('.ddlLogContactTypeID')
+	const slimSelectArray = document.querySelectorAll('.ddlLogContactTypeID') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
 			new SlimSelect({
@@ -37,7 +41,7 @@ export const ddlLogTypeInitialise = () => {
 	})
 }
 export const ddlGenericInitialise = () => {
-	const slimSelectArray = document.querySelectorAll('.ddlGeneric')
+	const slimSelectArray = document.querySelectorAll('.ddlGeneric') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
 			new SlimSelect({
@@ -93,7 +97,7 @@ const PopulateContactAddresses = (value: string) => {
 	if (ddlClientAddressID != null) {
 		ddlClientAddressID.innerHTML = ''
 	}
-	let ContactID
+	let ContactID: number = 0
 	if (value != null) {
 		if (value.toString() === '0') {
 			ContactID = 0
@@ -135,7 +139,7 @@ const createOption = (elem: any, selected: string, ddl: HTMLSelectElement) => {
 	ddl.appendChild(opt)
 }
 const getSelected = (ddl: HTMLSelectElement) => {
-	let selected: string = null
+	let selected: string = ''
 	Array.from(ddl.options).forEach(element => {
 		if (element.selected) {
 			selected = element.value
