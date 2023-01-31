@@ -1,8 +1,8 @@
 {
 	"name": "slim-select-prefabs",
-	"version": "1.0.10",
+	"version": "2.0.0",
 	"description": "A collection of slim-select prefabs",
-	"private": true,
+	"main": "dist/index.min.js",
 	"scripts": {
 		"build": "npm run wpb && npm run gulp",
 		"wpb": "webpack",

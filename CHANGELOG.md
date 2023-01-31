@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 Added webpack to compilation process.
 
+### Fixed
+Removed `private` from package.json so it can be published.
+
 ## [1.0.9] - 2023-01-18
 
 ### Added
