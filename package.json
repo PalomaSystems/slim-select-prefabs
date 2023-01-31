@@ -1,33 +1,36 @@
 {
-  "name": "slim-select-prefabs",
-  "version": "1.0.10",
-  "description": "A collection of slim-select prefabs",
-  "main": "dist/index.min.js",
-  "scripts": {
-    "build": "npm run tsc && npm run gulp",
-    "tsc": "tsc",
-    "gulp": "gulp pack-js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kylescudder/slim-select-prefabs.git"
-  },
-  "url": "https://github.com/kylescudder/slim-select-prefabs/issues",
-  "email": "kyle@kylescudder.co.uk",
-  "homepage": "https://github.com/kylescudder/slim-select-prefabs#readme",
-  "keywords": [
-    "slim-select",
-    "prefab"
-  ],
-  "author": "kylescudder",
-  "license": "MIT",
-  "dependencies": {
-    "slim-select": "^2.4.1",
-    "typescript": "^4.9.4"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-minify": "^3.1.0",
-    "gulp-rename": "^2.0.0"
-  }
+	"name": "slim-select-prefabs",
+	"version": "1.0.10",
+	"description": "A collection of slim-select prefabs",
+	"private": true,
+	"scripts": {
+		"build": "npm run wpb && npm run gulp",
+		"wpb": "webpack",
+		"gulp": "gulp pack-js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kylescudder/slim-select-prefabs.git"
+	},
+	"url": "https://github.com/kylescudder/slim-select-prefabs/issues",
+	"email": "kyle@kylescudder.co.uk",
+	"homepage": "https://github.com/kylescudder/slim-select-prefabs#readme",
+	"keywords": [
+		"slim-select",
+		"prefab"
+	],
+	"author": "kylescudder",
+	"license": "MIT",
+	"dependencies": {
+		"slim-select": "^2.4.1"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-minify": "^3.1.0",
+		"gulp-rename": "^2.0.0",
+		"ts-loader": "^9.4.2",
+		"typescript": "^4.9.5",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	}
 }
