@@ -4,9 +4,7 @@
 	"description": "A collection of slim-select prefabs",
 	"main": "dist/index.min.js",
 	"scripts": {
-		"build": "npm run wpb && npm run gulp",
-		"wpb": "webpack",
-		"gulp": "gulp pack-js"
+		"build": "babel src -d dist --extensions .ts && gulp pack-js"
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +23,10 @@
 		"slim-select": "^2.4.1"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.21.0",
+		"@babel/core": "^7.21.4",
+		"@babel/preset-env": "^7.21.4",
+		"@babel/preset-typescript": "^7.21.4",
 		"gulp": "^4.0.2",
 		"gulp-minify": "^3.1.0",
 		"gulp-rename": "^2.0.0",
