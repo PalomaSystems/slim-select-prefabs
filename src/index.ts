@@ -1,5 +1,4 @@
 ﻿import SlimSelect from 'slim-select'
-
 export const ddlClientInitialise = () => {
 	const slimSelectArray = document.querySelectorAll('.ddlClientID') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
@@ -159,3 +158,4 @@ const getSelected = (ddl: HTMLSelectElement) => {
 	})
 	return selected
 }
+export default ddlGenericInitialise()
