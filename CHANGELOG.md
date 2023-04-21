@@ -7,8 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [2.1.1] - 2023-04-21
 
+### Added
+Added small demo to project
+
 ### Changed
 Compilation is now done using babel and gulp, rather than just TypeScript compiling.
+
+### Fixed
+Added default export
+
+### Updated
+Updated slim-select version to 2.4.5
+Updated typescript version to 5.0.4
+Updated webpack version to 5.88.0
 
 ## [2.0.1] - 2023-04-20
 
