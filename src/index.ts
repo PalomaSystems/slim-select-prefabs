@@ -10,6 +10,9 @@ export const ddlClientInitialise = () => {
 					afterChange: () => {
 						contactLoad(element.value)
 					}
+				},
+				settings: {
+					allowDeselect: true
 				}
 			})
 		}
@@ -25,6 +28,9 @@ export const ddlClientContactInitialise = () => {
 					afterChange: () => {
 						PopulateContactAddresses(element.value)
 					}
+				},
+				settings: {
+					allowDeselect: true
 				}
 			})
 		}
@@ -35,7 +41,10 @@ export const ddlLogTypeInitialise = () => {
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
 			new SlimSelect({
-				select: element
+				select: element,
+				settings: {
+					allowDeselect: true
+				}
 			})
 		}
 	})
@@ -45,7 +54,10 @@ export const ddlGenericInitialise = () => {
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
 			new SlimSelect({
-				select: element
+				select: element,
+				settings: {
+					allowDeselect: true
+				}
 			})
 		}
 	})
