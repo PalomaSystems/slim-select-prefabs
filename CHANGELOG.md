@@ -8,44 +8,44 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [2.1.1] - 2023-04-21
 
 ### Added
-Added small demo to project
+- Added small demo to project
 
 ### Changed
-Compilation is now done using babel and gulp, rather than just TypeScript compiling.
+- Compilation is now done using babel and gulp, rather than just TypeScript compiling.
 
 ### Fixed
-Added default export
+- Added default export
 
 ### Updated
-Updated slim-select version to 2.4.5
-Updated typescript version to 5.0.4
-Updated webpack version to 5.88.0
+- Updated slim-select version to 2.4.5
+- Updated typescript version to 5.0.4
+- Updated webpack version to 5.88.0
 
 ## [2.0.1] - 2023-04-20
 
 ### Added
-Added `allowDeselect` to all dropdown lists
+- Added `allowDeselect` to all dropdown lists
 
 ## [2.0.0] - 2023-01-31
 
 ### Added
-Added webpack to compilation process.
+- Added webpack to compilation process.
 
 ### Fixed
-Removed `private` from package.json so it can be published.
+- Removed `private` from package.json so it can be published.
 
 ## [1.0.9] - 2023-01-18
 
 ### Added
-Added another generic method that uses class `ddlStyled` that adds some nice styling features.
+- Added another generic method that uses class `ddlStyled` that adds some nice styling features.
 
 ### Updated
-Updated slim-select version to 2.4.1
+- Updated slim-select version to 2.4.1
 
 ## [1.0.8] - 2022-12-09
 
 ### Changed
-Added GitHub Release from CHANGELOG.md action
+- Added GitHub Release from CHANGELOG.md action
 
 ### Changed
 - Updated README CDN links.
