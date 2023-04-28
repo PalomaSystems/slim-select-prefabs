@@ -9,7 +9,8 @@ A collection of slim-select prefabs
 ### NPM
 `npm i slim-select-prefabs`
 ### CDN
-`<script src="https://unpkg.com/slim-select-prefabs/dist/index.js"></script>`
+`<script src="https://unpkg.com/slim-select-prefabs/dist/index.min.js"></script>`
+`<link href="https://unpkg.com/slim-select-prefabs/dist/site.css"></link>`
 
 ## Usage
 ### Client
@@ -70,4 +71,10 @@ Add the class `ddlGeneric` to your select element
 import { ddlGenericInitialise } from 'slim-select-prefabs'
 
 ddlGenericInitialise()
+```
+## Style
+If you are using SCSS you can import the styles into your SCSS file with
+```
+@import "node_modules/slim-select-prefabs/dist/site.css";
+
 ```

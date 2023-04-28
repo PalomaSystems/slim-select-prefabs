@@ -1,10 +1,11 @@
 {
 	"name": "slim-select-prefabs",
-	"version": "2.1.1",
+
+	"version": "2.2.2",
 	"description": "A collection of slim-select prefabs",
 	"main": "dist/index.min.js",
 	"scripts": {
-		"build": "babel src -d dist --extensions .ts && gulp pack-js"
+		"build": "babel src/js -d dist --extensions .ts && gulp"
 	},
 	"repository": {
 		"type": "git",
@@ -28,8 +29,13 @@
 		"@babel/preset-env": "^7.21.4",
 		"@babel/preset-typescript": "^7.21.4",
 		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
 		"gulp-minify": "^3.1.0",
+		"gulp-newer": "^1.4.0",
 		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"sass": "^1.62.1",
 		"ts-loader": "^9.4.2",
 		"typescript": "^5.0.4",
 		"webpack": "^5.80.0",

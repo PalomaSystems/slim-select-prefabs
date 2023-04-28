@@ -5,6 +5,23 @@ All notable changes to the slim-select-prefabs library will be documented in thi
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [2.2.2] - 2023-04-27
+
+### Fixed
+- Replaced settings constant by repeating settings code for each function. Not as efficient but the slim-select documentation has not been updated for version 2 yet so until I know what settings have changed I am not comfortable using them.
+- Class added to contentLocation `div` for consistent styling.
+
+## [2.2.1] - 2023-04-27
+
+### Changed
+- Search highlighting added to all dropdowns
+- Search placeholder added to all dropdowns
+- Search text added to all dropdowns
+- Drpodown placeholder added to all dropdowns
+
+### Fixed
+- Changes to slim-select required rewrites of `ddlClientInitialise()` and `ddlClientContactInitialise()` to redraw them on `select` element updates.
+
 ## [2.1.1] - 2023-04-21
 
 ### Added
