@@ -3,7 +3,7 @@ export const ddlClientInitialise = () => {
 	const slimSelectArray = document.querySelectorAll('.ddlClientID') as NodeListOf<HTMLSelectElement>
 	slimSelectArray.forEach((element: HTMLSelectElement) => {
 		if (element.dataset.ssid === undefined && element.localName === 'select') {
-			new SlimSelect({
+			const slim = new SlimSelect({
 				select: element,
 				events: {
 					afterChange: () => {
@@ -13,6 +13,13 @@ export const ddlClientInitialise = () => {
 				settings: {
 					allowDeselect: true
 				}
+			})
+			const observer = new MutationObserver((mutations) => {
+				mutations.forEach((mutation) => {
+					if (mutation.addedNodes.length) {
+						slim.render
+					}
+				})
 			})
 		}
 	})
